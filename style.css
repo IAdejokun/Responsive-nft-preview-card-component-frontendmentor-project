@@ -72,12 +72,13 @@ body{
     height: 215px;
     width: 215px;
     opacity:0;
-    transition: .3 ease;
+    transition: .4s ease-in;
     background-color: var(--Cyan-opacity);
 }
 
 .overlay:hover{
     opacity:1;
+    cursor: pointer;
 }
 
 .view{
