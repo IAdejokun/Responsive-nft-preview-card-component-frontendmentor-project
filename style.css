@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+
+
+/* Primary */
+
+ --Soft-blue: hsl(215, 51%, 70%);
+ --Cyan: hsl(178, 100%, 50%);
+ --Cyan-opacity:hsla(178, 100%, 50%, 0.404);
+
+/* Neutral */
+
+ --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+ --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+ --Very-dark-blue-line: hsl(215, 32%, 27%);
+ --White: hsl(0, 0%, 100%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--Very-dark-blue-main-BG) !important;
+}
+
+.attribution { 
+                font-size: 11px; 
+                text-align: center; 
+                position: relative;
+                top: 100px; 
+                color: var(--Cyan);
+                }
+
+.attribution a { 
+                color: hsl(228, 45%, 44%); 
+                text-decoration: none;
+                }
+
+
+.card{
+    background-color: var(--Very-dark-blue-card-BG) !important;
+    margin: auto;
+    position: static;
+    top:4.375em;
+    border-radius: 3% !important;
+    height: 420px;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.151);
+}
+
+.card>img{
+    width: 215px;
+    height:215px;
+    align-self: center;
+    margin-top: 7%;
+    border-radius:10px;
+    
+}
+
+.overlay{
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    border-radius: 10px;
+    height: 215px;
+    width: 215px;
+    opacity:0;
+    transition: .3 ease;
+    background-color: var(--Cyan-opacity);
+}
+
+.overlay:hover{
+    opacity:1;
+}
+
+.view{
+    top: 50%;  
+    left: 50%;
+    transform: translate(170%, 170%);
+    -ms-transform: translate(170%, 170%);
+}
+
+.card-body h1{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;    
+    font-weight: 600;
+    color: var(--White);
+}
+
+.card-body h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.card-body{
+    color: var(--Soft-blue);
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 3px !important;
+    font-family: 'Outfit', sans-serif;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    line-height: 10px;
+    height:5%;
+}
+
+.details p{
+    font-weight: 400;
+    font-size: 12px;  
+    font-family:'Outfit', sans-serif;
+}
+
+.details p:first-child{
+    color:var(--Cyan);
+}
+
+.line{
+    height: 0.4%;
+    background-color: var(--Very-dark-blue-line);
+    margin:20px 0;
+    width: 202px;
+}
+
+.img-avatar{
+    width: 15%;
+    height: 15%;
+}
+
+
+.circle{
+    border-radius: 100%;
+    border:1px solid white;
+    background-color:transparent;
+    width: 30px;
+    height: 30px;
+    position:relative;
+    top: 29px;
+}
+
+footer{
+    position: relative;
+    bottom: 35px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--White);
+    
+}
+
+footer a:hover{
+    color:var(--Cyan);
+}
